@@ -1,0 +1,8 @@
+def alphabeticShift(inputString):
+    ergstring = ""
+    for i,e in enumerate(inputString):
+        if e == "z": 
+            ergstring += "a"
+            continue
+        ergstring += chr(ord(e) + 1)
+    return ergstring
